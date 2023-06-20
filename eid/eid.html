@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta http-equiv="x-UA-compatible" content = " IE = edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Eid Mubarak 2023</title>
+    <style>
+        body{
+            overflow: hidden;
+            position: relative;
+        }
+    section{
+        height: 100vh;
+        background: linear-gradient(to bottom,#032831,#0a2e51);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        font-size: 4em;
+        color: aliceblue;
+        position: fixed;
+    }
+    h2::before{
+        content: '';
+        position: absolute;
+        top: -100px;
+        left:-130px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border-left:10px solid #fff;
+        transform: rotate(-30deg);
+    }
+.mq{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:50%;
+    height: 300px;
+    background-size:cover;
+    background-position: bottom;
+    display: inline-flex;
+
+background-position:no-repeat;
+}
+.star{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff ;
+    box-shadow  : 0 0 20px #fff ;
+    box-shadow  : 0 0 40px #fff ;
+    box-shadow  : 0 0 80px #fff ;
+    animation: animate linear infinite;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+   10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+.h3{
+    font-size: 4em;
+        color: aliceblue;
+        position: fixed;
+        height: 80px;
+        justify-content: baseline;
+}
+    </style>
+    </head>
+    <body>
+        <section>
+            <h2>Eid Mubarak</h2></section>
+            
+            <div class="mq"
+            <div>
+        <img src="mp1.jpg">
+            </div>
+    </div>
+    <div class="h3"
+    <div>
+    <section><h3><b>from:AMATHUL SHIREEN</b></h3></section></div></div>
+
+    <script>
+       
+        let i =0;
+        let section = document.querySelector('section');
+        while(i <= 300){
+            let star =  document.createElement('i');
+
+star.classList.add('star'); 
+section.appendChild(star);
+
+let x = Math.floor(Math.random() * window.innerWidth);
+
+let y = Math.floor(Math.random()* window.innerHeight);
+
+
+
+let size= Math.random() * 4;
+
+let duration = Math.random() * 2;
+
+star.style.left = x + 'px';
+
+star.style.top = y + 'px';
+
+star.style.width = size + 'px';
+
+star.style.height =size + 'px'; 
+
+star.style.animationDuration = 2 + duration + 's';
+
+star.style.animationDelay =duration + 's';
+
+i++;
+        }
+      
+    </script>
+    
+    </body>
+</html>
+    
+    
+       
+        
+        
